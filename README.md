@@ -7,6 +7,6 @@ This repository keeps docker base images of cento6.10 with different program ins
 CentOS6.10 with Pyhton 2.7.13 devel installed.
 
 
-## NGINX 1.14.0
+## Python3.6.4 devel 
 
-CentOS 6.10 with NGINX 1.14.0 installed
+CentOS 6.10 with Python 3.6.4 devel installed
