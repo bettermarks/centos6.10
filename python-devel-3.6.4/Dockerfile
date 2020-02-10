@@ -10,11 +10,12 @@ RUN yum -y install \
   gcc \
   gcc-c++ \
   openssl-devel \
-  bzip2-devel
+  bzip2-devel \
+  sqlite-devel
 
 WORKDIR /usr/src
 RUN wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tgz
 RUN tar xzf Python-3.6.4.tgz
 WORKDIR /usr/src/Python-3.6.4
-RUN ./configure --enable-optimizations
+RUN ./configure --enable-optimizations --enable-loadable-sqlite-extensions
 RUN make altinstall
