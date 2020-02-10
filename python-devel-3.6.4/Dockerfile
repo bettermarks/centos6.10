@@ -18,9 +18,3 @@ RUN tar xzf Python-3.6.4.tgz
 WORKDIR /usr/src/Python-3.6.4
 RUN ./configure --enable-optimizations
 RUN make altinstall
-
-# Replace python default bin by the python3.6
-RUN rm /usr/bin/python
-RUN ln -s /usr/local/bin/python3.6 /usr/local/bin/python
-
-
